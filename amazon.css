@@ -1,0 +1,423 @@
+*{
+    margin:0;
+    font-family:arial;
+    border:border-box; 
+}
+.navbar{
+    height:60px;
+    background-color:#0f1111;
+    justify-content:space-evenly;/* sare content ko main-axis m equal space dega*/
+    color:white;
+    display:flex;
+    align-items:center; /*apllies on cross axis (display"flex" ki wajah se main axis row m h)*/
+}
+.nav-logo{
+    height: 55px;
+    width: 100px;
+}
+.logo{
+    background-image:url("Amazon-logo.jpeg");
+    background-size:cover;
+    height: 50px;
+    width:100%;
+   
+}
+.border{
+    border:2px solid transparent;
+}
+.border:hover{
+   border:1.5px solid white;
+}
+
+/* box-2 */
+.address-1{
+   font-size:0.6rem;
+   color:#CCCCCC;
+   margin-left: 15px;
+}
+.address-2{
+    font-size:0.85rem;
+    margin-left:3px;
+}
+.add-icon{
+    display:flex;
+    font-size:0.7rem;
+    align-items:center;
+}
+/* box-3 */
+.nav-search-container{
+    display:flex;
+    background-color:lightgreen;
+    height: 40px;
+    width: 800px;
+    border-radius: 3px;
+}
+.nav-search-container:hover{
+    border:3px solid rgb(255, 187, 0);
+}
+.search-select{
+    background-color:#f3f3f3;
+    width: 50px;
+    text-align:center;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+    border:none;/* select ka by default wala border hat jayega isse*/
+}
+.search-input{
+    width: 100%;/*jitna bhi bacha hua area hoga container m cover kar lega isse*/
+    font-size:1rem;
+    border:none;/* by default border hatt jayega, so dono select or input same size m aa jayenge*/
+}
+.search-icon{
+    display:flex;/*display flex diya taki child element m icon ki position sahi ho */
+    width:45px;
+    justify-content:center; /*justify-content distributes space bw and around along the main-axis,so abhi display is flex, to horizontally center m aayega*/
+    align-items:center; /*align-items distributes space along the cross-axis*/
+    font-size:1.2rem;/*icon(magnifying glass) ka size badaya*/
+    background-color:#fedb68;
+    border-top-right-radius:3px;
+    border-bottom-right-radius:3px;
+    color:#0f1111;
+}
+/*box-4*/
+span{
+    font-size:0.7rem;
+
+}
+.nav-second{
+    font-size:0.85rem;
+    font-weight:700;
+}
+/*box-5*/
+.cart i{
+    font-size:30px;/* we use class like ".cart i" bcz only icon ka font size change karna tha*/
+}
+.cart{
+    font-size:1rem;/* class m ".cart" likha bcz hame jo text likha h usko bhi font size dena h*/
+    font-weight:700;
+}
+
+/*line second*/
+.panel{
+    display:flex;
+    height:39px;
+    background-color:#222f3d;
+    color:white;
+    align-items:center;
+    justify-content:space-evenly;
+
+}
+.panel-opt p{
+    display:inline;
+    padding: 9px;
+    margin-left:15px;/*for spacing between elements*/
+}
+.panel-opt{
+    width:70%;
+}
+.panel-opt:hover{
+    cursor: pointer;
+}
+.panel-deals{
+    font-weight:700;
+    padding:8px 9px ;
+}
+.panel-deals:hover{
+    cursor:pointer;
+}
+.panel-all{
+    padding: 8px 9px;
+}
+
+
+/* Main Section*/
+.main-section{
+    display:flex;
+    align-items:end;
+    background-image:url("main-image.jpg");
+    height:400px;
+    background-size:cover;
+    justify-content:center;
+}
+.main-msg{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:white;
+    height:40px;
+    width:80%;
+    margin-bottom:20px;
+}
+.main-msg a{
+    color:#007185;
+    text-decoration:none;
+}
+
+.shop-section{
+    display:flex;
+    padding:20px;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    height:1350px;
+    width: 100%;;
+}
+/*box-1*/
+.box-1  {
+    display:flex;
+    flex-wrap:wrap;
+    height:400px;
+    width:385px;
+    background-color:white;
+    padding: 20px;
+
+}
+.aimg-1{
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    background-image:url("new-1.jpg");
+    height: 120px;
+    width:50%;
+}
+.aimg-2{
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    flex-wrap:wrap;
+    background-image:url("new-2.jpg");
+    height: 120px;
+    width: 50%;;
+}
+.aimg-3{
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    flex-wrap:wrap;
+    background-image:url("new-3.jpg");
+    height: 120px;
+    width: 50%;
+}
+.aimg-4{
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    flex-wrap:wrap;
+    background-image:url("new-4.jpg");
+    height: 120px;
+    width: 50%;
+}
+.aimg-1,.aimg-2,.aimg-3,.aimg-4:hover{
+    cursor:pointer;
+}
+/*box-2*/
+.box-2{
+    display:flex;
+    flex-wrap:wrap;
+    height:400px;
+    width:385px;
+    background-color:white;
+    padding: 20px;
+}
+.bimg{
+    height: 350px;
+    width:100%;
+    background-image:url("box-2image.jpg");
+    background-size:cover;
+    margin-bottom:20px;
+}
+/*box-3*/
+.box-3{
+    display:flex;
+    flex-wrap:wrap;
+    height:400px;
+    width:385px;
+    background-color:white;
+    padding: 20px;
+}
+.cimg{
+    height: 350px;
+    width:100%;
+    background-image:url("box-3-img.jpg");
+    background-size:cover;
+    margin-bottom:20px;
+}
+/*box-4*/
+.box-4{
+    display:flex;
+    flex-wrap:wrap;
+    height:400px;
+    width:385px;
+    background-color:white;
+    padding: 20px;
+}
+.dimg-1{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:flex-end;
+    justify-content:center;
+    background-image:url("Dining.jpg");
+    height: 120px;
+    width:50%;
+}
+.dimg-2{
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    flex-wrap:wrap;
+    background-image:url("Home.jpg");
+    height: 120px;
+    width: 50%;
+   
+}
+.dimg-3{
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    flex-wrap:wrap;
+    background-image:url("kitchen.jpg");
+    height: 120px;
+    width: 50%;
+}
+.dimg-4{
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    flex-wrap:wrap;
+    background-image:url("health.jpg");
+    height: 120px;
+    width: 50%;
+}
+
+.box-5{
+    display:flex;
+    flex-wrap:wrap;
+    height:400px;
+    width:385px;
+    background-color:white;
+    padding: 20px;
+}
+.eimg{
+    height: 350px;
+    width:100%;
+    background-image:url("d-img.jpg");
+    background-size:cover;
+    margin-bottom:20px;
+}
+.box-6{
+    display:flex;
+    flex-wrap:wrap;
+    height:400px;
+    width:385px;
+    background-color:white;
+    padding: 20px;
+}
+.f-img{
+    height: 350px;
+    width:100%;
+    background-image:url("f-img.jpg");
+    background-size:cover;
+    margin-bottom:20px;
+}
+.box-7{
+    display:flex;
+    flex-wrap:wrap;
+    height:400px;
+    width:385px;
+    background-color:white;
+    padding: 20px;
+}
+.g-img{
+    height: 350px;
+    width:100%;
+    background-image:url("g-img.jpg");
+    background-size:cover;
+    margin-bottom:20px;
+}
+.box-8{
+    display:flex;
+    flex-wrap:wrap;
+    height:400px;
+    width:385px;
+    background-color:white;
+    padding: 20px;
+}
+.h-img{
+    height: 350px;
+    width:100%;
+    background-image:url("h-img.jpg");
+    background-size:cover;
+    margin-bottom:20px;
+}
+
+/* footer*/
+.footer-panel{
+    height: 50px;
+    width:100%;
+    background-color:#37475a;
+    padding:10px 0px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:0.85rem;
+}
+.footer-panel2{
+    background-color:#222f3d;
+    justify-content:space-evenly;
+    height:500px;
+    width:100%;
+    color:white;
+    display:flex;
+}
+ul a{
+    display:block;
+    margin-top:15px;
+    color:#dddddd;
+    font-size:0.95rem;
+   
+}
+ul p{
+    font-weight:700;
+    margin-top:20px;
+}
+.foot-panel-3{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 70px;
+    color:white;
+    border-top:0.5px solid white;
+    background-color:#222f3d;
+}
+.end-logo{
+    background-image:url("ending-logo.jpg");
+    background-size:cover;
+    height: 50px;
+    width: 200px;;
+}
+.foot-panel-4{
+    display:flex;
+    height: 80px;
+    width:100%;
+    background-color:#0f1111;
+    color:white;
+}
+.pages{
+font-size:0.7rem;
+text-align:center;
+}
+.copyright{
+font-size:0.7rem;
+text-align:center;
+
+}
+
+    
+
+
+
+
+
+
+
+

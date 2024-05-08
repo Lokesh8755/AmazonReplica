@@ -1,0 +1,14 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "this is just for revision of express.js",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lokesh Mehta",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
